@@ -20,7 +20,7 @@ module.exports.createPhone = async (req, res, next) => {
 
 module.exports.getPhones = async (req, res, next) => {
   try {
-    const foundPhones = await Phone.find().limit(3);
+    const foundPhones = await Phone.find().limit(10);
 
     res.status(200).send({ data: foundPhones });
   } catch (err) {
