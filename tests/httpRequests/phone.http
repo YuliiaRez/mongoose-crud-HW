@@ -1,0 +1,36 @@
+POST http://127.0.0.1:5000/api/phones HTTP/1.1
+Content-Type: application/json
+
+{
+    "model": "Samsung",
+    "brand": "Galaxy A50",
+    "releaseYear": "2019",
+    "isNFC": true,
+    "storage": 64,
+    "display": 7
+}
+
+
+###
+
+GET http://127.0.0.1:5000/api/phones HTTP/1.1
+
+###
+
+GET http://127.0.0.1:5000/api/phones/61729146a2a7000fca570784 HTTP/1.1
+
+###
+PATCH http://127.0.0.1:5000/api/phones/61729171a2a7000fca570786 HTTP/1.1
+Content-Type: application/json
+
+{
+   "model": "Xiaomi",
+    "brand": "Redme Note9",
+    "releaseYear": "2020",
+    "storage": 64,
+    "display": 6.7
+
+}
+
+###
+DELETE http://127.0.0.1:5000/api/phones/61729146a2a7000fca570784 HTTP/1.1
